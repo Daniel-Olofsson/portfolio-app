@@ -1,83 +1,83 @@
 /* src/styles/projects.module.css */
 
 .page {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Arrange children vertically */
-    min-height: 100vh; /* Ensure it takes full height of the viewport */
-  }
-  
-  .main {
-    flex: 1; /* Allow the main content to expand */
-    padding: 20px; /* Add padding for the main content */
-  }
-  
-  .projectList {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive columns */
-    gap: 20px; /* Add spacing between project items */
-  }
-  
-  .projectList li {
-    background-color: #fff; /* White background for each project */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside each project card */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
-  }
-  
-  .projectList li:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-  }
-  
-  .projectList h2 {
-    margin: 0; /* Remove default margin */
-    font-size: 1.5rem; /* Increase font size for project title */
-    font-weight: 600; /* Make title bold */
-    color: #333; /* Dark text color */
-  }
-  
-  .projectList p {
-    margin: 5px 0; /* Add some spacing between the description and links */
-    font-size: 1rem; /* Regular text size for description */
-    color: #555; /* Slightly lighter color for description text */
-  }
-  
-  .projectLink {
-    text-decoration: none; /* Remove underline from links */
-    color: #0070f3; /* Link color */
-    font-weight: bold; /* Make the link bold */
-    font-size: 1rem; /* Standard text size for the link */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-  }
-  
-  .projectLink:hover {
-    color: #005bb5; /* Darker blue when hovered */
-  }
-  
-  .projectList li {
-    margin-bottom: 20px; /* Space between projects */
-  }
-  
-  .projectList h2 {
-    margin: 0; /* Remove default margin */
-  }
-  
-  .projectList p {
-    margin: 5px 0; /* Add some spacing between the description and links */
-  }
-  
-  .projectLink {
-    text-decoration: none;
-    color: #0070f3;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .projectDetail{
-    min-height: 100vh;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.projectList {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projectList li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectList li:hover {
+  transform: translateY(-5px);
+}
+
+.projectList h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.projectList p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.projectLink {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.projectLink:hover {
+  color: #005bb5;
+}
+
+.projectList li {
+  margin-bottom: 20px;
+}
+
+.projectList h2 {
+  margin: 0;
+}
+
+.projectList p {
+  margin: 5px 0;
+}
+
+.projectLink {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.projectDetail {
+  min-height: 100vh;
+  padding: 20px;
+}

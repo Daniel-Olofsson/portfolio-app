@@ -1,135 +1,134 @@
 /* Main Page Container */
 .page {
-    /*background-color: #f8f8f8; /* Light gray background */
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  /*background-color: #f8f8f8; /* Light gray background */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 /* Main Content */
 .main {
-    max-width: 800px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Global Header */
 .globalpageheader {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 /* Intro Section */
 .image {
-    border-radius: 50%; /* Round image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for a subtle 3D effect */
-    margin-right: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
 }
 
-.logoLinks{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+.logoLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
 .connect ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-  }
-  
-  .connect li {
-    margin: 10px 0; /* Add some space between list items */
-  }
-  
-  .connect a {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    gap: 8px; /* Space between the icon and the text */
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color */
-  }
-  
-  .connect a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+  list-style-type: none;
+  padding: 0;
+}
+
+.connect li {
+  margin: 10px 0;
+}
+
+.connect a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.connect a:hover {
+  text-decoration: underline;
+}
 
 .intro {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .introText {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* Columns for Skills and Hobbies */
 .columns {
-    display: flex;
-    justify-content: space-between; /* Space between the columns */
-    gap: 20px; /* Optional: Adjusts space between the columns */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* Section Styles */
-.softSkills{
-    background-color: #e0f7fa;;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Allow sections to grow equally */
+.softSkills {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
 }
 .skills,
 .hobbies {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Allow sections to grow equally */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
 }
 
 .sectionTitle {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.main ul { /* Scoped under .main */
-    list-style-type: none;
-    padding: 0;
+.main ul {
+  /* Scoped under .main */
+  list-style-type: none;
+  padding: 0;
 }
 
-.main ul li { /* Scoped under .main */
-    font-size: 1em;
-    padding: 5px 0;
-    color: #555;
+.main ul li {
+  /* Scoped under .main */
+  font-size: 1em;
+  padding: 5px 0;
+  color: #555;
 }
-
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        align-items: center;
-    }
-    .image {
-        margin: 0 auto;
-    }
-    
-    .columns {
-        flex-direction: column; /* Stack columns on smaller screens */
-    }
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    margin: 0 auto;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
 }

@@ -1,24 +1,25 @@
 .scrollToTopButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .scrollToTopButton.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .scrollToTopButton:hover {
-    background-color: #0056b3;
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.scrollToTopButton.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollToTopButton:hover {
+  background-color: #0056b3;
+}

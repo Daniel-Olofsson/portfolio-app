@@ -1,27 +1,27 @@
 /* src/styles/footer.module.css */
 
 .footer {
-    background-color: #333; /* Background color for the footer */
-    color: #fff; /* Text color */
-    text-align: center; /* Center text in the footer */
-    padding: 20px; /* Padding for spacing */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer li {
-    display: inline; /* Display items inline */
-    margin: 0 10px; /* Space between links */
+  display: inline;
+  margin: 0 10px;
 }
 
 .footer a {
-    color: #fff; /* Link color */
-    text-decoration: none; /* Remove underline */
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
