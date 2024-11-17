@@ -1,0 +1,56 @@
+/* src/styles/navbar.module.css */
+
+.navbar {
+    background: linear-gradient(135deg, #454545, #1c1c1c); /* Gradient från mörk till lite ljusare grå */
+    padding: 10px; /* Padding for the navbar */
+    width: 100%; /* Make the navbar full width */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align it to the top of the screen */
+    left: 0; /* Align it to the left of the screen */
+    z-index: 1000; /* Ensure it stays above other content */
+    border-radius: 1px; /* Rundade hörn */
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.5); /* Ljusare skugga för mer glans */
+    background-size: 400% 100%; /* Ställ in storleken så att animationen kan röra sig */
+    animation: shine 3s linear infinite; /* Animation som får det att skimra */
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100% 50%; /* Starta från höger mitt */
+    }
+    50% {
+        background-position: 0% 50%; /* Flytta till vänster mitt */
+    }
+    100% {
+        background-position: 100% 50%; /* Återgå till höger mitt */
+    }
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Flexbox layout for horizontal links */
+    justify-content: space-around; /* Space between links */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    /*animation: roll 25s linear infinite; /* Rullande effekt */
+}
+@keyframes roll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.navbar li {
+    color: #fff; /* Link color */
+}
+
+.navbar a {
+    color: inherit; /* Inherit color from li */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smidig färgövergång vid hover */
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Gyllene accentfärg vid hover */
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.9); /* Ljusglimtande effekt vid hover */
+    text-decoration: underline; /* Underline on hover */
+}

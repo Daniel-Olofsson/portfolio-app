@@ -1,0 +1,51 @@
+/* src/styles/contact.module.css */
+
+.page {
+    margin-top: 60px; /* Adjust this value based on the height of your navbar */
+    padding: 20px; /* Add padding for spacing */
+    min-height: calc(100vh - 60px); /* Ensure it takes the full height minus navbar */
+    display: flex;
+    justify-content: center; /* Center the main content */
+    align-items: center; /* Vertically align content */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+    width: 100%; /* Allow the main to take full width */
+    max-width: 500px; /* Max width for the form */
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between fields */
+}
+
+.contactForm label {
+    font-weight: bold; /* Make labels bold */
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Make inputs take full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contactForm button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.contactForm button:hover {
+    background-color: #555; /* Darker on hover */
+}
