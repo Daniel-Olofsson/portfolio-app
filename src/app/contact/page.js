@@ -1,20 +1,29 @@
-"use client";
-import styles from "../../styles/contact.module.css"; // Import your CSS file for styling
+'use client';
+import { useState } from 'react';
+import styles from '../../styles/contact.module.css';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the form from submitting traditionally
+    e.preventDefault();
 
-    // Use FormData to get the form values reliably
-    const formData = new FormData(e.target);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
+    const { name, email, message } = formData;
 
-    // Create a mailto link with the values from the form
     const mailtoLink = `mailto:daniel-olofsson@hotmail.se?subject=Contact%20Form%20Message&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
-    
-    // Open the mailto link
+
     window.location.href = mailtoLink;
   };
 
@@ -22,21 +31,39 @@ export default function Contact() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Contact Me</h1>
-        <form
-          className={styles.contactForm}
-          onSubmit={handleSubmit} // Handle form submission through onSubmit
-        >
+        <form className={styles.contactForm} onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              required
+            />
           </div>
           <div>
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
+            />
           </div>
           <div>
             <label htmlFor="message">Message:</label>
-            <input type="text" id="message" name="message" required></input>
+            <input
+              type="text"
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              required
+            />
           </div>
           <button type="submit">Send Message</button>
         </form>
